@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">حساب المساحة</string>
+    <string name="C_p_c_d">آلة حاسبة لجزء الطائرة الأسطوانية</string>
+    <string name="K_n_p">عدد الطائرات الخارجية</string>
+    <string name="U_r">يرجى الإشارة إلى الأبعاد</string>
+    <string name="S_i_n_n_R">إعادة تعيين وبدء عملية حسابية جديدة</string>
+    <string name="Redaktiruem">تحرير</string>
+    <string name="n_p">الطائرة الخارجية</string>
+    <string name="visota">ارتفاع</string>
+    <string name="ploskosti">طائرة</string>
+    <string name="mm"> mm</string>
+    <string name="diametr">قطر ال</string>
+    <string name="visota_rezbi_na">ارتفاع الخيط على</string>
+    <string name="mm_kv"> mm2.</string>
+    <string name="K_v_p">عدد الطائرات الداخلية</string>
+    <string name="v_p">الطائرة الداخلية</string>
+    <string name="Plosh_ploskosti">منطقة الطائرة</string>
+    <string name="P_O_P">حساب المساحة الإجمالية</string>
+    <string name="Total_ploshch">المساحة الكلية</string>
+    <string name="dm_kv"> dm2.</string>
+    <string name="Torcevie">ينتهي</string>
+    <string name="Naruzhnie">الخارجي</string>
+    <string name="Vnutrennie">داخلي</string>
+    <string name="S_p_p">مجموع الطائرات بالتفصيل:</string>
+</resources>

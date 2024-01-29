@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Flächenberechnung</string>
+    <string name="C_p_c_d">Rechner für zylindrische Teilebenen</string>
+    <string name="K_n_p">Anzahl externer Ebenen</string>
+    <string name="U_r">Bitte Maße angeben</string>
+    <string name="S_i_n_n_R">Zurücksetzen und eine neue Berechnung starten</string>
+    <string name="Redaktiruem">Bearbeiten der </string>
+    <string name="n_p"> äußere Ebene</string>
+    <string name="visota">Höhe der </string>
+    <string name="ploskosti">Flugzeug</string>
+    <string name="mm"> mm</string>
+    <string name="diametr">Durchmesser der </string>
+    <string name="visota_rezbi_na">Gewindehöhe auf der </string>
+    <string name="mm_kv">  mm2.</string>
+    <string name="K_v_p">Anzahl interner Ebenen</string>
+    <string name="v_p"> innere Ebene</string>
+    <string name="Plosh_ploskosti">Flugzeugbereich </string>
+    <string name="P_O_P">Gesamtfläche berechnen</string>
+    <string name="Total_ploshch">Gesamtes Gebiet </string>
+    <string name="dm_kv"> dm2.</string>
+    <string name="Torcevie">Endet</string>
+    <string name="Naruzhnie">Äußere</string>
+    <string name="Vnutrennie">Intern</string>
+    <string name="S_p_p">Flugzeugsummen im Detail:</string>
+</resources>

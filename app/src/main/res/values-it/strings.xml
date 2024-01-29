@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calcolo dell\'area</string>
+    <string name="C_p_c_d">Calcolatore del piano della parte cilindrica</string>
+    <string name="K_n_p">Numero di piani esterni</string>
+    <string name="U_r">Si prega di indicare le dimensioni</string>
+    <string name="S_i_n_n_R">Reimposta e inizia un nuovo calcolo</string>
+    <string name="Redaktiruem">Modificando il </string>
+    <string name="n_p"> piano esterno</string>
+    <string name="visota">Altezza del </string>
+    <string name="ploskosti">aereo</string>
+    <string name="mm"> mm</string>
+    <string name="diametr">Diametro del </string>
+    <string name="visota_rezbi_na">Altezza del filo sul </string>
+    <string name="mm_kv">  mm2.</string>
+    <string name="K_v_p">Numero di piani interni</string>
+    <string name="v_p"> piano interno</string>
+    <string name="Plosh_ploskosti">Zona piana </string>
+    <string name="P_O_P">Calcola l\'area totale</string>
+    <string name="Total_ploshch">Totale dell\'area </string>
+    <string name="dm_kv"> dm2.</string>
+    <string name="Torcevie">Finisce</string>
+    <string name="Naruzhnie">Esterna</string>
+    <string name="Vnutrennie">Interna</string>
+    <string name="S_p_p">Somme dei piani in dettaglio:</string>
+</resources>

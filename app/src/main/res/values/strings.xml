@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">AreaCalculation</string>
+    <string name="C_p_c_d">Cylindrical part plane calculator</string>
+    <string name="K_n_p">Number of external planes</string>
+    <string name="U_r">Please indicate dimensions</string>
+    <string name="S_i_n_n_R">Reset and start a new calculation</string>
+    <string name="Redaktiruem">Editing the </string>
+    <string name="n_p"> outer plane</string>
+    <string name="visota">Height of the </string>
+    <string name="ploskosti">plane</string>
+    <string name="mm"> mm</string>
+    <string name="diametr">Diameter of the </string>
+    <string name="visota_rezbi_na">"Thread height on the "</string>
+    <string name="mm_kv"> sq.mm.</string>
+    <string name="K_v_p">Number of internal planes</string>
+    <string name="v_p">" internal plane"</string>
+    <string name="Plosh_ploskosti">Plane area </string>
+    <string name="P_O_P">Calculate total area</string>
+    <string name="Total_ploshch">Total area </string>
+    <string name="dm_kv"> sq.dm.</string>
+    <string name="Torcevie">Ends</string>
+    <string name="Naruzhnie">Outer</string>
+    <string name="Vnutrennie">Internal</string>
+    <string name="S_p_p">Sums of planes in detail:</string>
+</resources>

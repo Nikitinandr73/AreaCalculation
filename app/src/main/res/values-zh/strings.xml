@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">面积计算</string>
+    <string name="C_p_c_d">圆柱零件平面计算器</string>
+    <string name="K_n_p">外平面数量</string>
+    <string name="U_r">请注明尺寸</string>
+    <string name="S_i_n_n_R">重置并开始新的计算</string>
+    <string name="Redaktiruem">编辑 </string>
+    <string name="n_p"> 外平面</string>
+    <string name="visota">的高度 </string>
+    <string name="ploskosti">飞机</string>
+    <string name="mm"> 毫米</string>
+    <string name="diametr">直径 </string>
+    <string name="visota_rezbi_na">螺纹高度 </string>
+    <string name="mm_kv"> 平方毫米</string>
+    <string name="K_v_p">内部平面数量</string>
+    <string name="v_p"> 内平面</string>
+    <string name="Plosh_ploskosti">平面面积 </string>
+    <string name="P_O_P">计算总面积</string>
+    <string name="Total_ploshch">总面积 </string>
+    <string name="dm_kv"> 平方分米</string>
+    <string name="Torcevie">结束</string>
+    <string name="Naruzhnie">外</string>
+    <string name="Vnutrennie">内部的</string>
+    <string name="S_p_p">详细的平面总和</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cálculo de área</string>
+    <string name="C_p_c_d">Calculadora de plano de pieza cilíndrica</string>
+    <string name="K_n_p">Número de planos externos</string>
+    <string name="U_r">Por favor indicar dimensiones</string>
+    <string name="S_i_n_n_R">Restablecer e iniciar un nuevo cálculo</string>
+    <string name="Redaktiruem">Editando el </string>
+    <string name="n_p"> plano exterior</string>
+    <string name="visota">Height of the </string>
+    <string name="ploskosti">altura de la</string>
+    <string name="mm"> mm</string>
+    <string name="diametr">Diámetro de la </string>
+    <string name="visota_rezbi_na">Altura del hilo en el </string>
+    <string name="mm_kv"> mm2.</string>
+    <string name="K_v_p">Número de planos internos</string>
+    <string name="v_p"> plano interno</string>
+    <string name="Plosh_ploskosti">Área plana </string>
+    <string name="P_O_P">Calcular el área total</string>
+    <string name="Total_ploshch">Área total </string>
+    <string name="dm_kv"> dm2.</string>
+    <string name="Torcevie">Termina</string>
+    <string name="Naruzhnie">Exterior</string>
+    <string name="Vnutrennie">Interno</string>
+    <string name="S_p_p">Sumas de planos en detalle:</string>
+</resources>

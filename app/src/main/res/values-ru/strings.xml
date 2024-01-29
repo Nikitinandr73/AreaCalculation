@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Калькулятор площади</string>
+    <string name="C_p_c_d">Калькулятор площади цилиндрической детали</string>
+    <string name="K_n_p">Кол-во наружных плоскостей</string>
+    <string name="U_r">Укажите размеры</string>
+    <string name="S_i_n_n_R">Сбросить и начать новый расчет</string>
+    <string name="Redaktiruem">Редактируем </string>
+    <string name="n_p"> наружнюю плоскость</string>
+    <string name="visota">Высота </string>
+    <string name="ploskosti"> плоскости</string>
+    <string name="mm">мм</string>
+    <string name="diametr">Диаметр </string>
+    <string name="visota_rezbi_na">Высота резбы на </string>
+    <string name="mm_kv"> мм.кв.</string>
+    <string name="K_v_p">Кол-во внутренних плоскостей</string>
+    <string name="v_p"> внутреннюю плоскость</string>
+    <string name="Plosh_ploskosti">Площадь плоскости </string>
+    <string name="P_O_P">Посчитать общую площадь</string>
+    <string name="Total_ploshch">Общая площадь</string>
+    <string name="dm_kv"> дм.кв.</string>
+    <string name="Torcevie">Торцевые</string>
+    <string name="Naruzhnie">Наружние</string>
+    <string name="Vnutrennie">Внутренние</string>
+    <string name="S_p_p">Суммы плоскостей подробно:</string>
+</resources>

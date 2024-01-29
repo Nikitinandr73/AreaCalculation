@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">क्षेत्रगणना</string>
+    <string name="C_p_c_d">बेलनाकार भाग समतल कैलकुलेटर</string>
+    <string name="K_n_p">बाह्य तलों की संख्या</string>
+    <string name="U_r">कृपया आयाम बताएं</string>
+    <string name="S_i_n_n_R">रीसेट करें और नई गणना प्रारंभ करें</string>
+    <string name="Redaktiruem">का संपादन </string>
+    <string name="n_p"> बाहरी तल</string>
+    <string name="visota">की ऊंचाई </string>
+    <string name="ploskosti">विमान</string>
+    <string name="mm"> मिमी</string>
+    <string name="diametr">का व्यास </string>
+    <string name="visota_rezbi_na">धागे की ऊंचाई पर </string>
+    <string name="mm_kv"> वर्ग मिमी.</string>
+    <string name="K_v_p">आंतरिक तलों की संख्या</string>
+    <string name="v_p"> आंतरिक तल</string>
+    <string name="Plosh_ploskosti">समतल क्षेत्र </string>
+    <string name="P_O_P">कुल क्षेत्रफल की गणना करें</string>
+    <string name="Total_ploshch">कुल क्षेत्रफल </string>
+    <string name="dm_kv"> वर्ग डीएम.</string>
+    <string name="Torcevie">अंत</string>
+    <string name="Naruzhnie">आउटर</string>
+    <string name="Vnutrennie">आंतरिक</string>
+    <string name="S_p_p">विमानों का योग विस्तार से:</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calcul de surface</string>
+    <string name="C_p_c_d">Calculateur de plan de pièce cylindrique</string>
+    <string name="K_n_p">Nombre de plans externes</string>
+    <string name="U_r">PVeuillez indiquer les dimensions</string>
+    <string name="S_i_n_n_R">Réinitialiser et démarrer un nouveau calcul</string>
+    <string name="Redaktiruem">Modification du </string>
+    <string name="n_p"> oplan extérieur</string>
+    <string name="visota">Hauteur du </string>
+    <string name="ploskosti">avion</string>
+    <string name="mm"> mm</string>
+    <string name="diametr">Diamètre du </string>
+    <string name="visota_rezbi_na">Hauteur du fil sur le </string>
+    <string name="mm_kv">  mm2.</string>
+    <string name="K_v_p">Nombre de plans internes</string>
+    <string name="v_p"> plan interne</string>
+    <string name="Plosh_ploskosti">Zone d\'avion </string>
+    <string name="P_O_P">Calculer la superficie totale</string>
+    <string name="Total_ploshch">Superficie totale </string>
+    <string name="dm_kv"> dm2.</string>
+    <string name="Torcevie">Prend fin</string>
+    <string name="Naruzhnie">Extérieur</string>
+    <string name="Vnutrennie">Interne</string>
+    <string name="S_p_p">Sommes d\'avions en détail :</string>
+</resources>

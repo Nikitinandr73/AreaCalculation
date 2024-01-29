@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Калькулятар плошчы</string>
+    <string name="C_p_c_d">Калькулятар плошчы цыліндрычнай дэталі</string>
+    <string name="K_n_p">Коль-ць вонкавых плоскасцей</string>
+    <string name="U_r">Пазначце памеры</string>
+    <string name="S_i_n_n_R">Скінуць і пачаць новы разлік</string>
+    <string name="Redaktiruem">Рэдагуем </string>
+    <string name="n_p"> вонкавую плоскасць</string>
+    <string name="visota">Вышыня </string>
+    <string name="ploskosti"> плоскасці</string>
+    <string name="mm">мм</string>
+    <string name="diametr">Дыяметр </string>
+    <string name="visota_rezbi_na">Вышыня разьбы на </string>
+    <string name="mm_kv"> мм.кв.</string>
+    <string name="K_v_p">Коль-ць унутраных плоскасцей</string>
+    <string name="v_p"> ўнутраную плоскасць</string>
+    <string name="Plosh_ploskosti">Плошча плоскасц </string>
+    <string name="P_O_P">Палічыць агульную плошчу</string>
+    <string name="Total_ploshch">Агульная плошча</string>
+    <string name="dm_kv"> дм.кв.</string>
+    <string name="Torcevie">Тарцовыя</string>
+    <string name="Naruzhnie">Вонкавыя</string>
+    <string name="Vnutrennie">Унутраныя</string>
+    <string name="S_p_p">Сумы плоскасцей падрабязна:</string>
+</resources>
