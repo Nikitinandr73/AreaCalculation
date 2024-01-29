@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Калькулятор площі</string>
+    <string name="C_p_c_d">Калькулятор площі циліндричної деталі</string>
+    <string name="K_n_p">Кількість зовнішніх площин</string>
+    <string name="U_r">Вкажіть розміри </string>
+    <string name="S_i_n_n_R">Скинути та розпочати новий розрахунок</string>
+    <string name="Redaktiruem">Редагуємо </string>
+    <string name="n_p"> зовнішню площину</string>
+    <string name="visota">Висота </string>
+    <string name="ploskosti"> площині</string>
+    <string name="mm">мм</string>
+    <string name="diametr">Діаметр </string>
+    <string name="visota_rezbi_na">Висота різьблення на </string>
+    <string name="mm_kv"> мм.кв.</string>
+    <string name="K_v_p">Кількість внутрішніх площин</string>
+    <string name="v_p"> внутрішню площину</string>
+    <string name="Plosh_ploskosti">Площа площини </string>
+    <string name="P_O_P">Порахувати загальну площу</string>
+    <string name="Total_ploshch">Загальна площа</string>
+    <string name="dm_kv"> дм.кв.</string>
+    <string name="Torcevie">Торцеві</string>
+    <string name="Naruzhnie">Зовнішні</string>
+    <string name="Vnutrennie">Внутрішні</string>
+    <string name="S_p_p">Суми площин докладно:</string>
+</resources>

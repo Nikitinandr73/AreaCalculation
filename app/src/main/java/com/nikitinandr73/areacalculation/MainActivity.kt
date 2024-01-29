@@ -35,61 +35,11 @@ import com.nikitinandr73.areacalculation.ui.theme.LaytBG2
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val PI = 3.1415
         setContent {
             AreaCalculationTheme {
-                Screen_1()
+              Screen_1()
             }
         }
     }
 }
-@Composable
-fun Screen_1() {
-    Image(
-        painter = painterResource(id = R.drawable.b_bg),
-        contentDescription = "dark_bg",
-        modifier = Modifier
-            .fillMaxSize()
-            .alpha(1f),
-        contentScale = ContentScale.FillBounds
-    )
-    Column(
-        modifier = Modifier
-            .fillMaxSize(),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Top
-    ){
-        MyTopAppBar()
-        Text(
-            text = stringResource(id = R.string.U_r),
-            fontSize = 22.sp,
-            color = LaytBG,
-            fontFamily= FontFamily.Serif,
-            textDecoration = TextDecoration.Underline
-        )
-        Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .verticalScroll(rememberScrollState()),
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.Top
-        ) {
-            MainCalculation()
-            val context = LocalContext.current as Activity
-            Button(
-                modifier = Modifier.fillMaxWidth().
-                padding(5.dp),
-                colors = ButtonDefaults.buttonColors(
-                    containerColor = Cmania2, contentColor = LaytBG2
-                ),onClick = {
-                    context.recreate()
-                }) {
-                Text(
-                    text = stringResource(id = R.string.S_i_n_n_R),
-                    fontSize = 20.sp
-                )
-            }
-        }
-    }
 
-}

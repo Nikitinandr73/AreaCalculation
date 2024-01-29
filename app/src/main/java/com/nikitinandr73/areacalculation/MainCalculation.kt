@@ -1,6 +1,8 @@
 package com.nikitinandr73.areacalculation
 
 import android.annotation.SuppressLint
+import android.util.Log
+import android.util.Log.*
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -39,7 +41,6 @@ import kotlin.math.PI
 @Preview(showBackground = true, backgroundColor = 0)
 @Composable
 fun MainCalculation() {
-    val diam = "\u2300"
     val summNaruzhPlosk = remember { mutableFloatStateOf(0f) }
     val summVnutrPlosk = remember { mutableFloatStateOf(0f) }
     val summGlobal = remember { mutableFloatStateOf(0f) }
@@ -48,7 +49,9 @@ fun MainCalculation() {
     var sum_torc_pl: Float
     var max_diam_detali: Float
     var min_diam_vnenr_otv: Float
-    var global_summ: Float
+    var global_summ = 0f
+    val sgmm = summGlobal.value
+    val sgdm = summGlobal.value / 10000
 
     var MaxDiametrDetali = 0
 
@@ -69,21 +72,21 @@ fun MainCalculation() {
     val SummaTorcevihihPloskostey = remember {
         mutableStateOf("")
     }
-// Todo создаем лист наружних диаметров
+//создаем лист наружних диаметров
 
     var array_list_nar_Diam = mutableListOf<Int>()
 
-// Todo создаем лист внутренних диаметров
+// создаем лист внутренних диаметров
 
     var array_list_vnutr_Diam = mutableListOf<Int>()
 
 
-    // Todo функция добавляет наружние диаметры в лист наружних диаметров
+    //функция добавляет наружние диаметры в лист наружних диаметров
     fun addItem_list_nar_diam(x: Int) {
         array_list_nar_Diam.add(x)
     }
 
-    // Todo функция добавляет внутринние диаметры в лист внутренних диаметров
+    // функция добавляет внутринние диаметры в лист внутренних диаметров
     fun addItem_list_vnutr_diam(x: Int) {
         array_list_vnutr_Diam.add(x)
     }
@@ -95,7 +98,7 @@ fun MainCalculation() {
         verticalArrangement = Arrangement.spacedBy(14.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-//TODO Карточка поля ввода количества наружних плоскостей
+// Карточка поля ввода количества наружних плоскостей
         Card(
             modifier = Modifier.fillMaxWidth(),
             colors = CardDefaults.cardColors(
@@ -129,8 +132,8 @@ fun MainCalculation() {
             )
             val knp: Int = KolvoNaruznihPloskostey.value.toIntOrNull() ?: 0
 
-//TODO В зависимости сколько вн.плоскостей - столько и рисуем окон
-//TODO Добавляем  наружные плоскости:
+// В зависимости сколько вн.плоскостей - столько и рисуем окон
+// Добавляем  наружные плоскости:
             if (knp > 0) {
                 (1..knp).forEach() { i ->
                     Card(
@@ -160,9 +163,10 @@ fun MainCalculation() {
                             val VisotaRezbi = remember {
                                 mutableStateOf("")
                             }
-                            Row(modifier = Modifier
-                                .fillMaxHeight()
-                                .padding(10.dp),
+                            Row(
+                                modifier = Modifier
+                                    .fillMaxHeight()
+                                    .padding(10.dp),
                                 horizontalArrangement = Arrangement.Center
                             )
                             {
@@ -172,7 +176,8 @@ fun MainCalculation() {
                                     fontSize = 18.sp,
                                     color = Color.White
                                 )
-                                Text("$i",
+                                Text(
+                                    "$i",
                                     fontSize = 18.sp,
                                     color = Color.White
                                 )
@@ -191,9 +196,10 @@ fun MainCalculation() {
                                 value = VisotaDetali.value,
                                 onValueChange = { VisotaDetali.value = it },
                                 label = {
-                                    Row(modifier = Modifier
-                                        .fillMaxHeight()
-                                        .padding(10.dp),
+                                    Row(
+                                        modifier = Modifier
+                                            .fillMaxHeight()
+                                            .padding(10.dp),
                                         horizontalArrangement = Arrangement.Start
                                     )
                                     {
@@ -203,7 +209,8 @@ fun MainCalculation() {
                                             fontSize = 20.sp,
                                             color = LaytBG
                                         )
-                                        Text("$i",
+                                        Text(
+                                            "$i",
                                             fontSize = 20.sp,
                                             color = LaytBG
                                         )
@@ -239,9 +246,10 @@ fun MainCalculation() {
                                 value = DiametrDetali.value,
                                 onValueChange = { DiametrDetali.value = it },
                                 label = {
-                                    Row(modifier = Modifier
-                                        .fillMaxHeight()
-                                        .padding(10.dp),
+                                    Row(
+                                        modifier = Modifier
+                                            .fillMaxHeight()
+                                            .padding(10.dp),
                                         horizontalArrangement = Arrangement.Start
                                     )
                                     {
@@ -251,7 +259,8 @@ fun MainCalculation() {
                                             fontSize = 20.sp,
                                             color = LaytBG
                                         )
-                                        Text("$i",
+                                        Text(
+                                            "$i",
                                             fontSize = 20.sp,
                                             color = LaytBG
                                         )
@@ -288,9 +297,10 @@ fun MainCalculation() {
                                 value = VisotaRezbi.value,
                                 onValueChange = { VisotaRezbi.value = it },
                                 label = {
-                                    Row(modifier = Modifier
-                                        .fillMaxHeight()
-                                        .padding(10.dp),
+                                    Row(
+                                        modifier = Modifier
+                                            .fillMaxHeight()
+                                            .padding(10.dp),
                                         horizontalArrangement = Arrangement.Start
                                     )
                                     {
@@ -300,7 +310,8 @@ fun MainCalculation() {
                                             fontSize = 20.sp,
                                             color = LaytBG
                                         )
-                                        Text("$i",
+                                        Text(
+                                            "$i",
                                             fontSize = 20.sp,
                                             color = LaytBG
                                         )
@@ -329,7 +340,7 @@ fun MainCalculation() {
                                 ),
                                 shape = RoundedCornerShape(10.dp)
                             )
-// Todo добавляем в лист наружних диаметров
+//добавляем в лист наружних диаметров
 
                             val narpl = remember { mutableStateOf(0f) }
                             val vis = VisotaDetali.value.toFloatOrNull() ?: 0f
@@ -341,24 +352,27 @@ fun MainCalculation() {
                                 schetResult.toFloat() + plos_rezbi.toFloat()  // Площадь I-ой плоскости
                             val sum_nar_pl_i = summNaruzhPlosk.floatValue + narpl.value
                             sum_nar_pl += sum_nar_pl_i
-//TODO Глобальная сумма наружних плоскостей:
+// Глобальная сумма наружних плоскостей:
                             SummaNaruznihPloskostey.value = sum_nar_pl.toString()
-// TODO в цикле наполним множество  наружними диаметрами:
+// в цикле наполним множество  наружними диаметрами:
                             addItem_list_nar_diam(x = diam.toInt())
 
-                            Row(modifier = Modifier
-                                .fillMaxHeight()
-                                .padding(10.dp),
+                            Row(
+                                modifier = Modifier
+                                    .fillMaxHeight()
+                                    .padding(10.dp),
                                 horizontalArrangement = Arrangement.Start
                             )
                             {
                                 Text(
                                     // "Площадь плоскости "
-                                    text = stringResource(id = R.string.Plosh_ploskosti
+                                    text = stringResource(
+                                        id = R.string.Plosh_ploskosti
                                     ),
                                     color = Color.White
                                 )
-                                Text("${narpl.value}",
+                                Text(
+                                    "${narpl.value}",
                                     color = Color.White
                                 )
                                 Text(
@@ -381,7 +395,7 @@ fun MainCalculation() {
             }
         }
         poisk_max(array_list_nar_Diam)
-//TODO Карточка поля ввода количества внутренних плоскостей
+// Карточка поля ввода количества внутренних плоскостей
         Card(
             modifier = Modifier.fillMaxWidth(),
             colors = CardDefaults.cardColors(
@@ -417,7 +431,7 @@ fun MainCalculation() {
             val kvp: Int = KolvoVnutrennihPloskostey.value.toIntOrNull() ?: 0
             if (kvp > 0) {
 
-//TODO В зависимости сколько вн.плоскостей - столько и рисуем окон
+// В зависимости сколько вн.плоскостей - столько и рисуем окон
 
 
                 (1..kvp).forEach() { i ->
@@ -451,9 +465,10 @@ fun MainCalculation() {
 
 //  text = "Редактируем $i внутреннюю плоскость ",
 
-                            Row(modifier = Modifier
-                                .fillMaxHeight()
-                                .padding(10.dp),
+                            Row(
+                                modifier = Modifier
+                                    .fillMaxHeight()
+                                    .padding(10.dp),
                                 horizontalArrangement = Arrangement.Center
                             )
                             {
@@ -463,7 +478,8 @@ fun MainCalculation() {
                                     fontSize = 18.sp,
                                     color = Color.White
                                 )
-                                Text("$i",
+                                Text(
+                                    "$i",
                                     fontSize = 18.sp,
                                     color = Color.White
                                 )
@@ -485,9 +501,10 @@ fun MainCalculation() {
 //                                        "Высота $i плоскости", fontSize = 20.sp,
 //                                        color = LaytBG
 //                                    )
-                                    Row(modifier = Modifier
-                                        .fillMaxHeight()
-                                        .padding(10.dp),
+                                    Row(
+                                        modifier = Modifier
+                                            .fillMaxHeight()
+                                            .padding(10.dp),
                                         horizontalArrangement = Arrangement.Start
                                     )
                                     {
@@ -497,7 +514,8 @@ fun MainCalculation() {
                                             fontSize = 20.sp,
                                             color = LaytBG
                                         )
-                                        Text("$i",
+                                        Text(
+                                            "$i",
                                             fontSize = 20.sp,
                                             color = LaytBG
                                         )
@@ -533,9 +551,10 @@ fun MainCalculation() {
                                 value = DiametrVnutrPlosk.value,
                                 onValueChange = { DiametrVnutrPlosk.value = it },
                                 label = {
-                                    Row(modifier = Modifier
-                                        .fillMaxHeight()
-                                        .padding(10.dp),
+                                    Row(
+                                        modifier = Modifier
+                                            .fillMaxHeight()
+                                            .padding(10.dp),
                                         horizontalArrangement = Arrangement.Start
                                     )
                                     {
@@ -545,7 +564,8 @@ fun MainCalculation() {
                                             fontSize = 20.sp,
                                             color = LaytBG
                                         )
-                                        Text("$i",
+                                        Text(
+                                            "$i",
                                             fontSize = 20.sp,
                                             color = LaytBG
                                         )
@@ -581,9 +601,10 @@ fun MainCalculation() {
                                 value = VisotaRezbiVnutrPlosk.value,
                                 onValueChange = { VisotaRezbiVnutrPlosk.value = it },
                                 label = {
-                                    Row(modifier = Modifier
-                                        .fillMaxHeight()
-                                        .padding(10.dp),
+                                    Row(
+                                        modifier = Modifier
+                                            .fillMaxHeight()
+                                            .padding(10.dp),
                                         horizontalArrangement = Arrangement.Start
                                     )
                                     {
@@ -593,7 +614,8 @@ fun MainCalculation() {
                                             fontSize = 20.sp,
                                             color = LaytBG
                                         )
-                                        Text("$i",
+                                        Text(
+                                            "$i",
                                             fontSize = 20.sp,
                                             color = LaytBG
                                         )
@@ -638,9 +660,10 @@ fun MainCalculation() {
 //в цикле наполним множество  наружними диаметрами:
                             addItem_list_vnutr_diam(x = diam_vp.toInt())
 
-                            Row(modifier = Modifier
-                                .fillMaxHeight()
-                                .padding(10.dp),
+                            Row(
+                                modifier = Modifier
+                                    .fillMaxHeight()
+                                    .padding(10.dp),
                                 horizontalArrangement = Arrangement.Start
                             )
                             {
@@ -649,7 +672,8 @@ fun MainCalculation() {
                                     text = stringResource(id = R.string.Plosh_ploskosti),
                                     color = Color.White
                                 )
-                                Text("${vnpl.value}",
+                                Text(
+                                    "${vnpl.value}",
                                     color = Color.White
                                 )
                                 Text(
@@ -684,7 +708,7 @@ fun MainCalculation() {
                 defaultElevation = 20.dp
             ),
             shape = RoundedCornerShape(10.dp)
-        ){
+        ) {
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -697,17 +721,18 @@ fun MainCalculation() {
                     fontSize = 16.sp,
                     color = LaytBG
                 )
-                Row(modifier = Modifier.fillMaxWidth(),
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceEvenly,
                     verticalAlignment = Alignment.CenterVertically
-                ){
+                ) {
 // Наружние
                     Text(
                         text = stringResource(id = R.string.Naruzhnie),
                         color = LaytBG
                     )
                     Text(
-                        "${SummaNaruznihPloskostey.value}",
+                        SummaNaruznihPloskostey.value,
                         color = LaytBG
                     )
                     Text(
@@ -715,16 +740,17 @@ fun MainCalculation() {
                         color = LaytBG
                     )
                 }
-                Row(modifier = Modifier.fillMaxWidth(),
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceEvenly,
                     verticalAlignment = Alignment.CenterVertically
-                ){
+                ) {
                     Text(
                         text = stringResource(id = R.string.Vnutrennie),
                         color = LaytBG
                     )
                     Text(
-                        "${SummaVnutrennihPloskostey.value}",
+                        SummaVnutrennihPloskostey.value,
                         color = LaytBG
                     )
                     Text(
@@ -732,16 +758,17 @@ fun MainCalculation() {
                         color = LaytBG
                     )
                 }
-                Row(modifier = Modifier.fillMaxWidth(),
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceEvenly,
                     verticalAlignment = Alignment.CenterVertically
-                ){
+                ) {
                     Text(
                         text = stringResource(id = R.string.Torcevie),
                         color = LaytBG
                     )
                     Text(
-                        "${SummaTorcevihihPloskostey.value}",
+                        SummaTorcevihihPloskostey.value,
                         color = LaytBG
                     )
                     Text(
@@ -756,6 +783,8 @@ fun MainCalculation() {
         sum_torc_pl = (((max_diam_detali * max_diam_detali / 4 * PI) -
                 (min_diam_vnenr_otv * min_diam_vnenr_otv / 4 * PI)) * 2).toFloat()
         SummaTorcevihihPloskostey.value = sum_torc_pl.toString()
+        SummaNaruznihPloskostey.value = sum_nar_pl.toString()
+        SummaVnutrennihPloskostey.value = sum_vn_pl.toString()
 
         Button(
             modifier = Modifier.fillMaxWidth(),
@@ -765,21 +794,36 @@ fun MainCalculation() {
             onClick = {
                 global_summ = sum_nar_pl + sum_vn_pl + sum_torc_pl
                 summGlobal.floatValue = global_summ
+
             })
         {
 // Посчитать общую площадь
-            Text(text = stringResource(id = R.string.P_O_P),
+            Text(
+                text = stringResource(id = R.string.P_O_P),
                 fontSize = 20.sp
             )
         }
+//// Todo проверка начало
+//        Text(
+//            text = """
+//                |SummaNaruznihPloskostey =${SummaNaruznihPloskostey.value}
+//                |SummaVnutrennihPloskostey =${SummaVnutrennihPloskostey.value}
+//                |SummaTorcevihihPloskostey = ${SummaTorcevihihPloskostey.value}
+//            """.trimMargin(),
+//            color = LaytBG
+//        )
+//// Todo проверка конец
+
 // // Колонка с Результататоми рассчетов
         Column(
             modifier = Modifier
                 .fillMaxWidth(),
             horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.Center)
+            verticalArrangement = Arrangement.Center
+        )
         {
-            Row(modifier = Modifier.fillMaxWidth(),
+            Row(
+                modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceEvenly,
                 verticalAlignment = Alignment.CenterVertically
             )
@@ -789,7 +833,8 @@ fun MainCalculation() {
                     text = stringResource(id = R.string.Total_ploshch),
                     color = Color.White
                 )
-                Text("${summGlobal.floatValue}",
+                Text(
+                    "$sgmm",
                     fontSize = 24.sp,
                     color = Color.White
                 )
@@ -799,7 +844,8 @@ fun MainCalculation() {
                     color = Color.White
                 )
             }
-            Row(modifier = Modifier.fillMaxWidth(),
+            Row(
+                modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceEvenly,
                 verticalAlignment = Alignment.CenterVertically
             )
@@ -809,7 +855,8 @@ fun MainCalculation() {
                     text = stringResource(id = R.string.Total_ploshch),
                     color = Color.White
                 )
-                Text("${summGlobal.floatValue / 10000}",
+                Text(
+                    "$sgdm",
                     fontSize = 24.sp,
                     color = Color.White
                 )
@@ -820,8 +867,18 @@ fun MainCalculation() {
                 )
             }
         }
+    }
+
+    Row() {
+        Text(text = "${SummaNaruznihPloskostey.value}",
+            fontSize = 1.sp)
+        Text(text = "${SummaVnutrennihPloskostey.value}",
+            fontSize = 1.sp)
+        Text(text = "${SummaTorcevihihPloskostey.value}",
+            fontSize = 1.sp)
 
     }
+
 }
 
 
