@@ -36,19 +36,22 @@ fun MyTopAppBar() {
         title = { Text(text = stringResource(id = R.string.C_p_c_d)) },
         navigationIcon = {
             IconButton(onClick = {
-                scope.launch {navigationState.open()}
+                scope.launch { navigationState.open() }
             }) {
                 Icon(imageVector = Icons.Filled.Settings, contentDescription = "Setting_icon")
             }
         },
         actions = {
-            IconButton(onClick = {val activity: MainActivity = MainActivity()
+            IconButton(onClick = {
+                val activity: MainActivity = MainActivity()
                 activity.finish()
                 System.exit(0)
             }) {
-                Icon(imageVector = Icons.Default.Close,
+                Icon(
+                    imageVector = Icons.Default.Close,
                     contentDescription = "Close",
-                    tint = Color.Red)
+                    tint = Color.Red
+                )
             }
         },
         colors = TopAppBarDefaults.smallTopAppBarColors(

@@ -22,4 +22,7 @@
     <string name="Naruzhnie">Outer</string>
     <string name="Vnutrennie">Internal</string>
     <string name="S_p_p">Sums of planes in detail:</string>
+    <string name="banner_ad_mob1" translatable="false">ca-app-pub-4378016375488689/9033079962</string>
+    <string name="banner_ad_mob2" translatable="false">ca-app-pub-4378016375488689/9659765926</string>
+
 </resources>

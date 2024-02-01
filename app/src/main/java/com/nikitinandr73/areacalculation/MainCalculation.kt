@@ -1,7 +1,6 @@
 package com.nikitinandr73.areacalculation
 
 import android.annotation.SuppressLint
-import android.util.Log
 import android.util.Log.*
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -72,11 +71,11 @@ fun MainCalculation() {
     val SummaTorcevihihPloskostey = remember {
         mutableStateOf("")
     }
-//создаем лист наружних диаметров
+//создаем лист наружних диаметро
 
     var array_list_nar_Diam = mutableListOf<Int>()
 
-// создаем лист внутренних диаметров
+// создаем лист внутренних диаметро
 
     var array_list_vnutr_Diam = mutableListOf<Int>()
 
@@ -803,18 +802,7 @@ fun MainCalculation() {
                 fontSize = 20.sp
             )
         }
-//// Todo проверка начало
-//        Text(
-//            text = """
-//                |SummaNaruznihPloskostey =${SummaNaruznihPloskostey.value}
-//                |SummaVnutrennihPloskostey =${SummaVnutrennihPloskostey.value}
-//                |SummaTorcevihihPloskostey = ${SummaTorcevihihPloskostey.value}
-//            """.trimMargin(),
-//            color = LaytBG
-//        )
-//// Todo проверка конец
-
-// // Колонка с Результататоми рассчетов
+// Колонка с Результататоми рассчетов
         Column(
             modifier = Modifier
                 .fillMaxWidth(),
@@ -870,12 +858,18 @@ fun MainCalculation() {
     }
 
     Row() {
-        Text(text = "${SummaNaruznihPloskostey.value}",
-            fontSize = 1.sp)
-        Text(text = "${SummaVnutrennihPloskostey.value}",
-            fontSize = 1.sp)
-        Text(text = "${SummaTorcevihihPloskostey.value}",
-            fontSize = 1.sp)
+        Text(
+            text = "${SummaNaruznihPloskostey.value}",
+            fontSize = 1.sp
+        )
+        Text(
+            text = "${SummaVnutrennihPloskostey.value}",
+            fontSize = 1.sp
+        )
+        Text(
+            text = "${SummaTorcevihihPloskostey.value}",
+            fontSize = 1.sp
+        )
 
     }
 
